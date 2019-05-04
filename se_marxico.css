@@ -1,0 +1,204 @@
+.preview-container html,body,div,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.preview-container a {
+    margin:0;
+    padding:0;
+    border:0;
+    line-height:1.571428em;
+    cursor:pointer;
+}
+
+.preview-container code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li {
+    padding:0;
+    border:0;
+}
+
+.preview-container abbr,acronym,address,area,b,bdo,big,blockquote,caption,center,cite,code,col,colgroup,dd {
+    line-height:1.571428em;
+}
+
+.preview-container del {
+    line-height:1.571428em;
+    text-decoration:line-through;
+}
+
+.preview-container dfn {
+    line-height:1.571428em;
+    font-style:italic;
+}
+
+.preview-container div,dl,dt,em,font,h3,h4,h5,h6,hr,i,ins,kbd,li,map,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul {
+    line-height:1.571428em;
+}
+
+.preview-container body {
+    color:#383838;
+    font-family:gotham, helvetica, arial, sans-serif;
+    font-size:14px;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    margin:1.428571em;
+    margin-top:0;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+}
+
+.preview-container a:link,a:visited {
+    color:#047ac6;
+}
+
+.preview-container a:hover,a:active {
+    color:#2596de;
+}
+
+.preview-container h1 {
+    font-family:gotham, helvetica, arial, sans-serif;
+    font-weight:bold;
+    font-size:1.5em;
+    line-height:1.047619em;
+    margin-bottom:0.4761em;
+    margin-top:0.9523em;
+}
+
+.preview-container h2 {
+    font-family:gotham, helvetica, arial, sans-serif;
+    font-weight:bold;
+    font-size:1.286em;
+    line-height:1.222222em;
+    margin-bottom:0.5556em;
+    margin-top:1.111em;
+}
+
+.preview-container h3 {
+    font-family:gotham, helvetica, arial, sans-serif;
+    font-weight:bold;
+    font-size:1em;
+    margin-bottom:0.714285em;
+    margin-top:1.4285em;
+}
+
+.preview-container h4,h5,h6 {
+    font-family:gotham, helvetica, arial, sans-serif;
+    font-weight:bold;
+}
+
+.preview-container h4,h5,h6 {
+    font-size:1em;
+    font-weight:bold;
+}
+
+.preview-container div {
+    font-family:gotham, helvetica, arial, sans-serif;
+    font-size:14px;
+}
+
+.preview-container p {
+    margin-bottom:0.714285em;
+}
+
+.preview-container img.en-media {
+    margin-bottom:1.286em;
+    max-width:100%;
+    height:auto;
+}
+
+.preview-container img.en-media[height="1"] {
+    height:1px;
+}
+
+.preview-container p+img,p+div img {
+    margin-top:0.714285em;
+}
+
+.preview-container div+img,div+div img {
+    margin-top:0.857412em;
+}
+
+.preview-container img+img,div+div img+img {
+    margin-top:0;
+}
+
+.preview-container ul,ol {
+    list-style-position:outside;
+    margin-top:0.2857em;
+    margin-bottom:0.714285em;
+    margin-left:2em;
+    padding-left:0;
+}
+
+.preview-container li ul,li ol {
+    margin-bottom:0;
+    margin-top:0;
+}
+
+.preview-container p+ul,p+ol,h1+ul,h1+ol,h2+ul,h2+ol {
+    margin-top:-0.428571em;
+}
+
+.preview-container blockquote {
+    border-left-color:#bfbfbf;
+    border-left-style:solid;
+    border-left-width:2px;
+    margin-left:1.4285em;
+    padding-left:0.714285em;
+    margin-top:1.4285em;
+    margin-bottom:1.4285em;
+}
+
+.preview-container pre,code {
+    font-family:Monaco, Courier, monospace;
+}
+
+.preview-container cite {
+    font-style:italic;
+}
+
+.preview-container table {
+    font-size:1em;
+}
+
+.preview-container th,td {
+    padding:0.2em 2em 0.2em 0;
+    text-align:left;
+    vertical-align:top;
+}
+
+.preview-container button.en-ignore {
+    margin-bottom:1em;
+}
+
+.preview-container .highlight {
+    border:1px solid #62eb92;
+    background:#c9f2d0;
+}
+
+.preview-container .Decrypted {
+    background-color:#f7f7f7;
+    padding:5px;
+}
+
+.preview-container .Decrypted .Header {
+    font-family:gotham, helvetica, arial, sans-serif;
+    font-size:11px;
+    padding-bottom:5px;
+    color:#404040;
+}
+
+.preview-container .Decrypted .Body {
+    background-color:white;
+    padding:5px;
+}
+
+.preview-container .canvas-container {
+    margin-bottom:10px;
+    border:1px solid #cacaca;
+    background:#fff url(/redesign/global/img/loading-spinner.gif) no-repeat center center;
+}
+
+.preview-container ::selection {
+    background:#c9f2d0;
+}
