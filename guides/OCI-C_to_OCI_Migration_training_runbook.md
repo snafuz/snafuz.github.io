@@ -1,6 +1,14 @@
 ---
-title: Test
+layout: post
+title: How to Make a Jekyll Site/Blog
+slug: how-to-make-jekyll-site-blog
+modified: 2018-09-02 19:35 CDT
+description: A tutorial on making a Jekyll based site/blog.
+author: brian
+seo.type: BlogPosting
+image: How to Make a Jekyll Site/Blog
 ---
+
 ### OCI-C to OCI migration demo runbook 
 
 > The below instructions are intended to support training class delivery within a pre-existent environment and don't describe the full migration process.
