@@ -13,3 +13,4 @@ include:
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
   - OCI-C_to_OCI_Migration_training_runbook.md
+  - OCI-C_to_OCI_Migration.md
