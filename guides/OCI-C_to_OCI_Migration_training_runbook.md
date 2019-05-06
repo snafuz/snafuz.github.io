@@ -1,4 +1,14 @@
-### OCI-C to OCI migration runbook to demo the process during the training
+---
+title: Test
+---
+### OCI-C to OCI migration demo runbook 
+
+> The below instructions are intended to support training class delivery within a pre-existent environment and don't describe the full migration process.
+For further details about the process please see:
+[Discovery](https://docs.oracle.com/en/cloud/iaas/compute-iaas-cloud/migrate-oci/identify-and-translate-resources-your-source-environment.html#GUID-75664E09-FAD9-4CA0-A6D5-86F23DDE9B49)
+and 
+[Migration](https://docs.oracle.com/en/cloud/iaas/compute-iaas-cloud/migrate-oci/migrate-vms-and-block-storage.html#GUID-7099C387-9826-4D22-A448-C3FC4ABBD094)
+
 
 ### Discovery
 
@@ -35,6 +45,8 @@
 	opcmigrate instances-export --plan migration-plan.json --format json > instances.json
 	opcmigrate instances-export --plan migration-plan.json --format yaml > instances.yaml
 	```
+   
+
 ### Migration
 
 1.  setup `secret.yml`
