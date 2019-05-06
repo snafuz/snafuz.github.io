@@ -1,7 +1,6 @@
 ---
-theme: cayman
 title: This is my title
-layout: post
+layout: layouts/post
 ---
 
 ### OCI-C to OCI migration demo runbook 
