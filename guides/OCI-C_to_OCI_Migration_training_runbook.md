@@ -1,6 +1,5 @@
 ---
 title: This is my title
-layout: _layouts/post
 ---
 
 ### OCI-C to OCI migration demo runbook 
