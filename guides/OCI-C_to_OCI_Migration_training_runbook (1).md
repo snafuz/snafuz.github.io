@@ -1,4 +1,22 @@
-### OCI-C to OCI migration runbook to demo the process during the training
+---
+layout: post
+title: How to Make a Jekyll Site/Blog
+slug: how-to-make-jekyll-site-blog
+modified: 2018-09-02 19:35 CDT
+description: A tutorial on making a Jekyll based site/blog.
+author: brian
+seo.type: BlogPosting
+image: How to Make a Jekyll Site/Blog
+---
+
+### OCI-C to OCI migration demo runbook 
+
+> The below instructions are intended to support training class delivery within a pre-existent environment and don't describe the full migration process.
+For further details about the process please see:
+[Discovery](https://docs.oracle.com/en/cloud/iaas/compute-iaas-cloud/migrate-oci/identify-and-translate-resources-your-source-environment.html#GUID-75664E09-FAD9-4CA0-A6D5-86F23DDE9B49)
+and 
+[Migration](https://docs.oracle.com/en/cloud/iaas/compute-iaas-cloud/migrate-oci/migrate-vms-and-block-storage.html#GUID-7099C387-9826-4D22-A448-C3FC4ABBD094)
+
 
 ### Discovery
 
@@ -35,6 +53,8 @@
 	opcmigrate instances-export --plan migration-plan.json --format json > instances.json
 	opcmigrate instances-export --plan migration-plan.json --format yaml > instances.yaml
 	```
+   
+
 ### Migration
 
 1.  setup `secret.yml`
@@ -65,7 +85,8 @@
 
 > _written by Andrea Marchesini - last update: May 6th, 2019_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MDkwMDkzNiwzNTIxNDExNjYsLTEyMD
-UzMTA3OTcsMTQzNTg0ODM3MiwtMTQwMTY0NjI5NiwtOTc3MTM1
-MTQyLC0xNDU0ODU3NDM0LC0xNjkzMTEyMDA4XX0=
+eyJoaXN0b3J5IjpbLTcwNDEzMDY3MywtMjkwOTAwOTM2LDM1Mj
+E0MTE2NiwtMTIwNTMxMDc5NywxNDM1ODQ4MzcyLC0xNDAxNjQ2
+Mjk2LC05NzcxMzUxNDIsLTE0NTQ4NTc0MzQsLTE2OTMxMTIwMD
+hdfQ==
 -->

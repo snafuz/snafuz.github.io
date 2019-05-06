@@ -1,12 +1,6 @@
 ---
+title: This is my title
 layout: post
-title: How to Make a Jekyll Site/Blog
-slug: how-to-make-jekyll-site-blog
-modified: 2018-09-02 19:35 CDT
-description: A tutorial on making a Jekyll based site/blog.
-author: brian
-seo.type: BlogPosting
-image: How to Make a Jekyll Site/Blog
 ---
 
 ### OCI-C to OCI migration demo runbook 
@@ -85,5 +79,5 @@ and
 
 > _written by Andrea Marchesini - last update: May 6th, 2019_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MDkwMDkzNl19
+eyJoaXN0b3J5IjpbLTcwNDEzMDY3MywtMjkwOTAwOTM2XX0=
 -->

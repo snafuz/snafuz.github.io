@@ -1,3 +1,9 @@
+---
+title: This is my title
+layout: post
+---
+
+
 # OCI-C to OCI Migration
 
 ## Discovery phase
