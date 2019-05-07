@@ -1,5 +1,6 @@
 ---
-title: This is my title
+title: OCI-C to OCI Migration demo runbook
+description: Andrea Marchesini's guides
 ---
 
 ### OCI-C to OCI migration demo runbook 
