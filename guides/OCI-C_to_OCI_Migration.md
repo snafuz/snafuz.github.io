@@ -1,5 +1,4 @@
 ---
-theme: tactile
 title: This is my title
 ---
 
