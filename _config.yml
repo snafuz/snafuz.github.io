@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-hacker
 title: Andrea Marchesini's guides
 plugins:
   - jekyll-relative-links
