@@ -12,7 +12,7 @@ description: Implement a scalable WebServer Pool in Oracle Cloud Infrastructure
 [Configure the Network](#configure-the-network)  
 [Configure the load balancer](#configure-the-load-balancer)  
 [Configure Auto Scaling](#configure-auto-scaling)  
-[Test it!](#test-it!)
+[Test it!](#test-it)
 
 
 ## Overview
