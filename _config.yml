@@ -16,3 +16,4 @@ include:
   - PULL_REQUEST_TEMPLATE.md
   - OCI-C_to_OCI_Migration_training_runbook.md
   - OCI-C_to_OCI_Migration.md
+  - autoscale_full_lab.md
