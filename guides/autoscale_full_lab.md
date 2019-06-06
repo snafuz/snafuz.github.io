@@ -36,17 +36,17 @@ A cooldown period between autoscaling events lets the system stabilize at the up
 
 ### Pre-Requisites
 
-1. OCI Training : https://cloud.oracle.com/en_US/iaas/training
+1. [OCI Training](https://cloud.oracle.com/en_US/iaas/training)
 
-2. Familiarity with OCI console: https://docs.us-phoenix-1.oraclecloud.com/Content/GSG/Concepts/console.htm
+2. [Familiarity with OCI console](https://docs.us-phoenix-1.oraclecloud.com/Content/GSG/Concepts/console.htm)
 
-3. Overview of Networking: https://docs.us-phoenix-1.oraclecloud.com/Content/Network/Concepts/overview.htm
+3. [Overview of Networking](https://docs.us-phoenix-1.oraclecloud.com/Content/Network/Concepts/overview.htm)
 
-4. Familiarity with Compartment: https://docs.us-phoenix-1.oraclecloud.com/Content/GSG/Concepts/concepts.htm
+4. [Familiarity with Compartment](https://docs.us-phoenix-1.oraclecloud.com/Content/GSG/Concepts/concepts.htm)
 
-5. Connecting to a compute instance: https://docs.us-phoenix-1.oraclecloud.com/Content/Compute/Tasks/accessinginstance.htm
+5. [Connecting to a compute instance](https://docs.us-phoenix-1.oraclecloud.com/Content/Compute/Tasks/accessinginstance.htm)
 
-6. Familiarity with Load Balancer concepts.
+6. [Familiarity with Load Balancer concepts](https://docs.cloud.oracle.com/iaas/Content/Balance/Concepts/balanceoverview.htm)
 
 >__Note__: 
 All screen shots are examples only. As OCI UI is being frequently updated, some screenshot might be different than actual UI
@@ -69,20 +69,20 @@ Sign it to your OCI tenancy with an user with the following privileges in the de
 	> __Tip__: You can select the option _Create Virtual Cloud Network Plus Related Resources:_  that will provide you with a default basic network configuration.
 4. Edit __Default Security List__ in _Security Lists_ menu on VCN details page.
 5. Add an __Ingress rule__ with the below characteristics:
-   - _Stateless_: False
-   - _Source CIDR_: 0.0.0.0/0
-   - _IP Protocol_: tcp
-   - _Source Port_: None
-   - _Destination Port_: 80
+   - _Stateless_: __False__
+   - _Source CIDR_: __0.0.0.0/0__
+   - _IP Protocol_: __tcp__
+   - _Source Port_: __None__
+   - _Destination Port_: __80__
 
 ## Configure the load balancer
 
 1. From OCI services menu, Click __Load Balancer__ under __Networking__
 2. Setup a Load Balancer with the below characteristics:
-    - _Visibility_: Public
-    - _Listener_: HTTP/80
-    - _Backend Set Traffic Distribution Policy_: Round Robin
-    - _Backend Servers_: None
+    - _Visibility_: __Public__
+    - _Listener_: _HTTP/80_
+    - _Backend Set Traffic Distribution Policy_: __Round Robin__
+    - _Backend Servers_: __None__
 
 ![](images/lb.png)
 
@@ -94,7 +94,7 @@ Configure instance pool requires creating a instance configuration.
 
 2. Setup the instance with the below characteristics:
 
-   - _Image Operating System_:For the image, we recommend using the latest Oracle Linux available.
+   - _Image Operating System_: we recommend using the latest Oracle Linux available.
    - _Instance Type_:  Virtual Machine
    - _Instance Shape_: Select a shape
    - _Boot Volume_: Leave the default
@@ -134,7 +134,7 @@ Configure instance pool requires creating a instance configuration.
    - _Attach Load Balancer_: Select the Load Balancer created earlier, the Backend Set and set port 80.
    - _Availability Domain_: Choose the AD you want to places instances in.
    - _VCN and Subnet_: Choose the VCN created earlier and the Subnet in available in the selected AD.
-   - Click __+ Additional Selection__ and select a different Availability Domain for the instance pool. Then, specify the VCN details for the second availability domain.
+   - Click _+ Additional Selection_ and select a different Availability Domain for the instance pool. Then, specify the VCN details for the second availability domain.
 
    > We configured instances to be deployed in two different Avaialability Domains, though they can be deployed in the same Availability Domain as long as service limits allow it.
 
@@ -149,26 +149,26 @@ Configure instance pool requires creating a instance configuration.
 2. Setup the configuration with the below characteristics:
 
    - _Instance Pool_: Choose your instance pool name created earlier
-   - _Cooldown in Seconds_: 300  
+   - _Cooldown in Seconds_: __300__  
    (This is the minimum and the default period of time between scaling actions)
-   - _Performance Metric_ : CPU Utilization  
+   - _Performance Metric_ : __CPU Utilization__  
    (This is the Metric to use for triggering scaling actions.)
-   - _Minimum Number of Instances_ : 1
-   - _Maximum Number of Instances_ : 2
-   - _Initial Number of Instances_ : 1
-   - _Scale-out Operator_: Greater than (>)
-   - _Threshold Percentage_: 10
-   - _Number of Instances to Add_ : 1
-   - _Scale-in Operator_ : Less than (<)
-   - _Threshold Percentage_ : 5
-   - _Number of Instances to Remove_  : 1
+   - _Minimum Number of Instances_ : __1__
+   - _Maximum Number of Instances_ : __2__
+   - _Initial Number of Instances_ : __1__
+   - _Scale-out Operator_: __Greater than (>)__
+   - _Threshold Percentage_: __10__
+   - _Number of Instances to Add_ : __1__
+   - _Scale-in Operator_ : __Less than (<)__
+   - _Threshold Percentage_ : __5__
+   - _Number of Instances to Remove_  : __1__
 
 
 > We have now created a auto scaling policy that will start with creating 1 compute instance in the designated pool. Once the CPU utilization is determined to be above 10% for atleast 300 seconds another compute instance will be launched automatically.   
 Once the CPU utilization is determined to be less than 5% for 300 seconds, one compute instance will be removed.  
 At all times there will be atleast 1 compute instance in the pool**
 
-## Test it!
+## Test it
 
 1. Click **Instance Pools** under _Compute_ and then your pool name. It should be in __Scaling__  status while the pool is creating the first intance.  
 When the status change to __Running__, wait a couple of more minutes, so that the cloud-init script has time to complete. Clik on the instance name and note down the Public and Private IPs from the details page (under _Primary VNIC Information _section)
