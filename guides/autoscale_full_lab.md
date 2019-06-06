@@ -2,7 +2,6 @@
 title: OCI Labs - WebServer Pool
 description: Implement a scalable WebServer Pool in Oracle Cloud Infrastructure
 ---
-# Configuring Auto Scaling
 
 ## Table of Contents
 
