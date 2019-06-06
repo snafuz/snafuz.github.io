@@ -102,7 +102,8 @@ Configure instance pool requires creating a instance configuration.
    - _VCN_: Select the VCN created earlier
    - ___Advanced Options___
      - _Management_: Paste the below cloud-init script  
-    ```YAML
+   
+   ```YAML
    #cloud-config
    packages:
    - httpd
