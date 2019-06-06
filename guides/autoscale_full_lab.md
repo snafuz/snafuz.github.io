@@ -6,16 +6,12 @@ description: Implement a scalable WebServer Pool in Oracle Cloud Infrastructure
 
 ## Table of Contents
 
-[Overview](#overview)
-
-[Pre-Requisites](#pre-requisites)
-
-[Sign in to OCI Console and create VCN](#sign-in-to-oci-console)
-[Configure the Network](#configure-the-network)
-[Configure the load balancer](#configure-the-load-balancer)
-
-[Configure Auto Scaling](#configure-auto-scaling)
-
+[Overview](#overview)  
+[Pre-Requisites](#pre-requisites)  
+[Sign in to OCI Console and create VCN](#sign-in-to-oci-console)  
+[Configure the Network](#configure-the-network)  
+[Configure the load balancer](#configure-the-load-balancer)  
+[Configure Auto Scaling](#configure-auto-scaling)  
 [Test it!](#test-it!)
 
 
@@ -105,7 +101,7 @@ Configure instance pool requires creating a instance configuration.
    - _SSH Key_: Paste you public SSH key or upload the Public Key file
    - _VCN_: Select the VCN created earlier
    - ___Advanced Options___
-     - _Management_: Paste the below cloud-init script
+     - _Management_: Paste the below cloud-init script  
     ```YAML
    #cloud-config
    packages:
@@ -199,9 +195,11 @@ When the status change to __Running__, wait a couple of more minutes, so that th
 8. Navigate to Instanse pool details page and after 3-4 minutes Instance Pool status will change to **Scaling** again. One of the compute instances will be deleted. 
    >This is because our criteria of CPU utilization < 5 is met
 
-***Congratulations! You have successfully completed the lab. ***
+___Congratulations! You have successfully completed the lab.___
 
-
+  
+  
+  
 
 ---
  _Written by Andrea Marchesini_
